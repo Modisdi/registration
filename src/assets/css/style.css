@@ -1,0 +1,443 @@
+body {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal; }
+
+.wrapper {
+  max-width: 1430px;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.header {
+  position: relative;
+  width: 100%;
+  padding: 25px 0px 20px;
+  background: #3534AC; }
+
+.header__logo {
+  margin-right: auto;
+  margin-left: auto;
+  width: 273px;
+  height: 89px;
+  background: #fff; }
+
+.header__ul {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between; }
+
+.header__li {
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.header__a {
+  transition: color ease-out 0.3s;
+  color: #fff;
+  font-size: 17px; }
+
+.header__closeMenu {
+  display: none;
+  margin-top: 12px;
+  color: #fff;
+  font-size: 17px;
+  transition: color ease-out 0.3s; }
+
+.header__a:active, .header__a:hover, .header__a-active, .header__closeButton:hover {
+  transition: color ease-out 0.3s;
+  color: #9218E2; }
+
+.header__loginButton {
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%);
+  height: 36px;
+  position: absolute;
+  font-weight: bold;
+  background: #fff;
+  border-radius: 31px; }
+
+.header__buttonSpan {
+  padding-right: 3px;
+  padding-left: 3px;
+  color: #415EEC;
+  font-weight: bold;
+  font-size: 20px; }
+
+.header__menuWrapper {
+  margin-top: 20px;
+  justify-content: center;
+  display: none; }
+  .header__menuWrapper .header__loginIcon {
+    margin-left: 17px;
+    background: url("../icons/user.svg") no-repeat;
+    width: 22px;
+    height: 22px; }
+  .header__menuWrapper .header__menuIcon {
+    background: url("../icons/bars.svg") no-repeat;
+    width: 22px;
+    height: 22px; }
+
+.search {
+  margin: 25px auto 0;
+  max-width: 900px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.search__input {
+  max-width: 100%;
+  height: 100%;
+  flex-grow: 2;
+  padding-left: 30px;
+  background: #fff;
+  border: 1px solid #315EFB;
+  border-right: none; }
+
+.search__button {
+  width: 88px;
+  height: 100%;
+  background: linear-gradient(to top, #2F4FEB, #18BEE2);
+  border-bottom: 1px solid #315EFB; }
+
+.sectionTitle {
+  text-align: center;
+  color: #2F4FEB;
+  font-size: 30px;
+  font-weight: bold; }
+
+.horoscopeEveryone {
+  margin: 54px auto 0; }
+
+.horoscopeEveryone__buttonWrapper {
+  margin: 22px auto 0;
+  position: relative;
+  max-width: 810px;
+  display: flex;
+  padding-left: 5px;
+  padding-right: 5px; }
+  .horoscopeEveryone__buttonWrapper:before {
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(to right, #9218E2, #2F4FEB); }
+
+.horoscopeEveryone__button {
+  position: relative;
+  width: 25%;
+  height: 31px;
+  font-size: 16px;
+  color: #000;
+  transition: background 51s;
+  z-index: 3; }
+
+.horoscopeEveryone__buttonSpan {
+  position: relative;
+  z-index: 3; }
+
+.horoscopeEveryone__button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  background: linear-gradient(to right, #9218e2, #2f4feb);
+  transition: opacity ease-out .3s;
+  z-index: 2; }
+
+.horoscopeEveryone__button.horoscopeEveryone__button-active:before {
+  opacity: 1;
+  transition: opacity ease-out .3s; }
+
+.horoscopeEveryone__button-active {
+  color: #fff;
+  transition: all ease-out .3s; }
+
+.horoscopeEveryone__text {
+  margin-top: 16px;
+  width: 100%; }
+
+.horoscopeZodiac {
+  width: 100%;
+  position: relative; }
+  .horoscopeZodiac .sectionTitle {
+    margin-bottom: 30px; }
+
+.horoscopeZodiac__container {
+  margin: 73px auto 0;
+  max-width: 1300px;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.horoscopeZodiac__wrapper {
+  display: flex;
+  flex-wrap: wrap; }
+
+.horoscopeZodiac__block {
+  margin-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.horoscopeZodiac__circleButton {
+  position: relative;
+  width: 94px;
+  height: 94px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: linear-gradient(to right, #9218e2, #2f4feb); }
+
+.horoscopeZodiac__circleButton:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  background: linear-gradient(to top left, #2f4feb, #91ebff);
+  border-radius: 50%;
+  z-index: 2;
+  transition: opacity ease-out .3s; }
+
+.horoscopeZodiac__circleButton.horoscopeZodiac__circleButton-active:before {
+  opacity: 1;
+  transition: opacity ease-out .3s; }
+
+.horoscopeZodiac__img {
+  position: relative;
+  z-index: 3; }
+
+.horoscopeZodiac__titleZodiac {
+  margin-top: 15px;
+  display: block;
+  text-align: center;
+  color: #0B0ABB;
+  font-size: 20px; }
+
+.socialNetworks {
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  width: 75px;
+  height: 235px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 0;
+  background: linear-gradient(to top left, #2F4FEB, #9218E2); }
+
+.footer {
+  width: 100%;
+  padding: 35px 0;
+  background: #3534AC; }
+
+.footer__container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 950px; }
+
+.footer__title {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold; }
+
+.footer__form {
+  display: flex;
+  flex-direction: column; }
+
+.footer__formRow {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.footer__formBlock {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column; }
+
+.footer__errorLabel {
+  height: 15px;
+  display: flex;
+  align-items: baseline; }
+
+.footer__errorImg {
+  width: 10px;
+  height: 9px;
+  transition: all ease-out 0.3s; }
+
+.footer__errorSpan {
+  margin-left: 5px;
+  color: #FF6464;
+  font-size: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all ease-out 0.2s; }
+
+.footer__errorStar {
+  width: 10px;
+  height: 9px;
+  background-image: url("../icons/star.png");
+  background-repeat: no-repeat;
+  background-position: 0 0px; }
+
+.footer__errorLabel-show .footer__errorStar {
+  background-position: 0 -9px; }
+
+.footer__errorLabel-show .footer__errorSpan {
+  opacity: 1;
+  visibility: visible;
+  transition: all ease-out 0.2s; }
+
+.footer__formInput {
+  margin-top: 10px;
+  padding-left: 14px;
+  height: 45px;
+  color: #fff;
+  background: #4443E9; }
+
+.footer__checkboxRow {
+  margin-top: 20px;
+  position: relative;
+  margin-right: 15px;
+  margin-left: 15px;
+  padding-left: 30px;
+  display: flex; }
+
+.footer__checkboxLabel:before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #000;
+  background: transparent; }
+
+.footer__checkboxLabel:after {
+  content: "";
+  top: -9px;
+  left: -4px;
+  width: 32px;
+  height: 23px;
+  position: absolute;
+  background: url("../icons/arrow.png");
+  opacity: 0;
+  visibility: hidden;
+  transition: all ease-out 0.3s; }
+
+#footer__checkbox:checked + .footer__checkboxLabel:after {
+  opacity: 1;
+  visibility: visible;
+  transition: all ease-out 0.3s; }
+
+.footer__checkboxLabel {
+  color: #fff; }
+
+.footer__submitButton {
+  margin: 25px auto 0;
+  width: 218px;
+  height: 45px;
+  font-size: 16px;
+  background: linear-gradient(to left, #2F4FEB, #91EBFF);
+  color: #fff;
+  border-radius: 22px; }
+
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 0;
+  height: 0;
+  background-color: #000;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity ease-in-out .3s, visibility ease-in-out .5s, width ease 100.3s, height ease 100.3s; }
+
+.modalBackdrop-show {
+  visibility: visible;
+  opacity: .5;
+  width: 100vw;
+  height: 100vh;
+  transition: opacity ease-in-out .3s, visibility ease-in-out .3s; }
+
+.modalWindow {
+  top: 300px;
+  left: 50%;
+  position: absolute;
+  z-index: 100;
+  max-width: 640px;
+  width: 100%;
+  height: 1050px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 53px 57px;
+  background: #fff;
+  border-radius: 40px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(-100%, -50%) scale(0.5, 0.5);
+  transition: opacity ease-in-out .3s, visibility ease .3s, transform ease-in-out .8s; }
+
+.modalWindow-show {
+  visibility: visible;
+  transform: translate(-50%, 0) scale(1, 1);
+  opacity: 1;
+  transition: all ease-in-out .3s; }
+
+.modalWindow__closeButton {
+  margin: 21px -31px 0 auto;
+  font-size: 30px;
+  color: #2F4FEB;
+  font-weight: bold; }
+
+.modalWindow__title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #2F4FEB; }
+
+.modalWindow__input {
+  margin-top: 15px;
+  width: 100%;
+  height: 59px;
+  padding-left: 20px;
+  font-size: 20px;
+  border: 1px solid #2F4FEB; }
+
+.modalWindow__input::placeholder {
+  color: #707070; }
+
+.modalWindow__errorLabel {
+  margin-top: 20px;
+  margin-left: 5px;
+  color: #FF6464;
+  font-size: 11px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all ease-out 0.2s; }
+
+.modalWindow__errorLabel-show {
+  opacity: 1;
+  visibility: visible;
+  transition: all ease-out 0.2s; }
+
+.modalWindow__submitButton {
+  margin-top: auto;
+  height: 84px;
+  background: #2F4FEB;
+  border-radius: 42px;
+  color: #fff;
+  font-size: 26px; }

@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/*Медиазапросы от 0*/
+@media (max-width: 1600px) {
+  .socialNetworks {
+    margin: 0 auto 25px;
+    width: 235px;
+    height: 75px;
+    position: static;
+    flex-direction: row;
+    padding: 0 28px; } }
+
+@media (max-width: 1199px) {
+  .header__loginButton {
+    top: 146px;
+    left: 50%;
+    transform: translateX(-50%); }
+  .header__ul {
+    margin-top: 100px;
+    flex-wrap: wrap; }
+  .header__li {
+    margin-top: 10px;
+    width: 25%; }
+  .header__a {
+    font-size: 17px; } }
+
+@media (max-width: 991px) {
+  .header__a {
+    font-size: 15px; }
+  .horoscopeEveryone__buttonWrapper {
+    margin: 22px 25px 0; }
+  .horoscopeEveryone__button {
+    font-size: 15px; } }
+
+@media (max-width: 767px) {
+  .header__loginButton {
+    display: none; }
+  .header__menuWrapper {
+    display: flex; }
+  .header__nav {
+    display: flex;
+    align-items: flex-start;
+    z-index: 10;
+    width: 300px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    transform: translateX(-100%);
+    padding: 0 7px 15px 15px;
+    background: linear-gradient(to top left, #2F4FEB, #91EBFF);
+    transition: transform ease-out .3s; }
+  .header__nav-show {
+    transform: translateX(0);
+    transition: transform ease-out .3s; }
+  .header__ul {
+    width: 100%;
+    margin-top: 0;
+    flex-direction: column; }
+  .header__li {
+    float: left;
+    width: 100%; }
+  .header__closeMenu {
+    display: block; }
+  .horoscopeEveryone__buttonWrapper {
+    flex-wrap: wrap;
+    margin: 22px 20px 0; }
+    .horoscopeEveryone__buttonWrapper:before {
+      display: none; }
+  .horoscopeEveryone__button {
+    width: 50%; } }
+
+/*Медиазапросы диапазонные*/

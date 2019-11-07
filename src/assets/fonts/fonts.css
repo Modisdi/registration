@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+@font-face {
+  font-family: "user-icon";
+  src: url("user.eot");
+  src: url("user.eot?#iefix") format("embedded-opentype"), url("user.woff") format("woff"), url("user.ttf") format("truetype"), url("user.svg#user-icon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
